@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+ * {
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    min-height: 100vh;/* Se fosse a largura seria 100vw */
+    background-color: rgb(243, 236, 228);
+
+}
+header{
+    background-color: black;
+    color: cornsilk;
+    text-align: center;
+    
+}
+header > h1 {
+    padding-top: 50px;
+    /* Transformando em maiúscula   text-transform: uppercase;*/
+    font-variant: small-caps;/* Fica apenas as primeiras letras maiúsculas */
+
+  
+}
+header > p {
+    padding-bottom: 50px;
+}
+ header a,footer a{
+    color: whitesmoke;
+    text-decoration: none;/* Sem o sublinhado  */
+    font-weight: bolder;/*  deixando em negrito */
+}
+header a:hover, footer a:hover{
+
+    text-decoration: underline;/* Passa o mouse mostre o underline */
+
+}
+section{
+    /* Para dar o efeito paralax aumentando a section . Ele vai se adptando com */
+    padding-top:10vh ;
+    padding-bottom:10vh ;
+    /* espaçamento entre as linhas  2em */
+    line-height: 2em;
+    /* afastando para o lado direito 33px */
+    padding-left: 33px;
+}
+
+section.normal{
+    background-color: wheat;
+    color: black;
+}
+section.image{
+    background-color: rgb(52, 48, 48);
+    color: aliceblue;
+}
+section.image >p{
+    width: 360px;
+    background-color: rgba(0, 0, 0, 0.277);
+}
+footer{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+
+}
