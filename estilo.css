@@ -1,24 +1,40 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;/* h1 e links */
+    --fonte2:'Passion One', cursive;/* Em títulos */
+    --fonte3:'Sriracha', cursive;/* no texto */
+}
 
  * {
+    /* Configurações normais  */
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
+
 }
 html,body{
     min-height: 100vh;/* Se fosse a largura seria 100vw */
     background-color: rgb(243, 236, 228);
+    font-family: var(--fonte1);
 
 }
 header{
     background-color: black;
     color: cornsilk;
     text-align: center;
+   
     
 }
 header > h1 {
     padding-top: 50px;
     /* Transformando em maiúscula   text-transform: uppercase;*/
     font-variant: small-caps;/* Fica apenas as primeiras letras maiúsculas */
+    font-family: var(--fonte2);
+   /*  font-size: 3.6em; */
+   font-size: 10vw;
 
   
 }
@@ -43,6 +59,10 @@ section{
     line-height: 2em;
     /* afastando para o lado direito 33px */
     padding-left: 33px;
+    font-family: var(--fonte3);
+  /*   font-size: 2.3em; */
+  font-size: 3.5vw;
+
 }
 
 section.normal{
@@ -54,7 +74,9 @@ section.image{
     color: aliceblue;
 }
 section.image >p{
-    width: 360px;
+  /*   width: 360px; */
+  display: inline-block;/* Transforma em uma caixa que adapta o conteúdo  */
+  padding: 3px;
     background-color: rgba(0, 0, 0, 0.277);
 }
 footer{
