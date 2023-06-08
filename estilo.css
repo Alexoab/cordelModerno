@@ -64,6 +64,9 @@ section{
   font-size: 3.5vw;
 
 }
+section > p{
+    padding-bottom: 2em;
+}
 
 section.normal{
     background-color: wheat;
@@ -72,12 +75,26 @@ section.normal{
 section.image{
     background-color: rgb(52, 48, 48);
     color: aliceblue;
+    box-shadow: inset 3px 3px 9px 0px black;
+    background-attachment: fixed;
 }
 section.image >p{
   /*   width: 360px; */
   display: inline-block;/* Transforma em uma caixa que adapta o conteúdo  */
   padding: 3px;
-    background-color: rgba(0, 0, 0, 0.277);
+  background-color: rgba(0, 0, 0, 0.277);
+  text-shadow: 3px 3px 0px black;
+}
+section#img01{
+background-image: url(/imagens/DreamShaper0.jpg);
+background-position: right center;
+background-size: cover;
+
+}
+section#img02{
+    background-image: url(/imagens/background002.jpg);
+    background-size: cover;
+
 }
 footer{
     background-color: black;
